@@ -1,0 +1,43 @@
+{
+  "name": "Slack Notification",
+  "type": "java-jar",
+  "main": "dist/slack.jar",
+  "documentation": "readme.md",
+  "description": "Send a notification to a Slack channel",
+  "settingGroups": [
+    {
+      "label": "Authorisation",
+      "description": "Your Slack API Key",
+      "fields": {
+        "apiKey": {
+          "type": "input",
+          "label": "API Key",
+          "value": "",
+          "options": {
+            "type": "text"
+          }
+        }
+      }
+    },
+    {
+      "label": "Notification Settings",
+      "fields": {
+        "jobName": {
+          "type": "input",
+          "description": "You can use any of the available tokens such as ${pipeline} or ${stage} etc.",
+          "label": "Message",
+          "value": "",
+          "options": {
+            "type": "text",
+            "max": 40
+          }
+        }
+      }
+    }
+  ],
+  "setup": {
+    "description": "Global settings for the Jenkins Run Job Plugin.",
+    "fields": {
+    }
+  }
+}
