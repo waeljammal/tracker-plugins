@@ -1,0 +1,50 @@
+{
+  "name": "Run Jenkins Job",
+  "description": "Runs a Jenkins job and waits for it to complete",
+  "settingGroups": [
+    {
+      "label": "Jenkins API",
+      "fields": {
+        "domain": {
+          "type": "input",
+          "value": "",
+          "options": {
+            "type": "text"
+          }
+        },
+        "username": {
+          "type": "input",
+          "value": "",
+          "options": {
+            "type": "text"
+          }
+        },
+        "password": {
+          "type": "input",
+          "value": "",
+          "options": {
+            "type": "password"
+          }
+        }
+      }
+    },
+    {
+      "label": "Job Settings",
+      "fields": {
+        "jobName": {
+          "type": "input",
+          "value": "",
+          "options": {
+            "type": "text",
+            "max": 40
+          }
+        }
+      }
+    }
+  ],
+  "setup": {
+    "description": "Global settings for the Jenkins Run Job Plugin.",
+    "fields": {
+    }
+  }
+}
